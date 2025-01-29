@@ -1,9 +1,20 @@
-// Fonction pour charger une nouvelle vidéo
+// Fonction pour charger une nouvelle vidéo avec page de chargement
 function loadVideo(videoSrc) {
+    // Montre l'écran de chargement
+    const loadingScreen = document.getElementById('loadingScreen');
+    loadingScreen.style.display = 'flex'; // Affiche l'écran de chargement
+
     const videoElement = document.getElementById('mainVideo');
     videoElement.src = videoSrc;  // Change la source de la vidéo
+
+    // Lors du chargement de la vidéo, nous allons cacher l'écran de chargement quand elle est prête
+    videoElement.oncanplaythrough = function() {
+        // La vidéo peut être lue, on peut la démarrer et cacher le chargement
+        loadingScreen.style.display = 'none';  // Cache l'écran de chargement
+        videoElement.play();  // Démarre la lecture de la vidéo
+    };
+
     videoElement.load();  // Recharge la vidéo
-    videoElement.play();  // Démarre la lecture de la vidéo
 
     // Supprime la classe 'active' de tous les liens
     document.querySelectorAll('.titles-container a').forEach(link => {
