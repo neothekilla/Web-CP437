@@ -1,4 +1,3 @@
-
 // Fonction pour charger une nouvelle vidéo
 function loadVideo(videoSrc) {
     const videoElement = document.getElementById('mainVideo');
@@ -12,7 +11,7 @@ function loadVideo(videoSrc) {
     });
 
     // Ajoute la classe 'active' au lien correspondant
-    const activeLink = document.querySelector(.titles-container a[data-video="${videoSrc}"]);
+    const activeLink = document.querySelector(`.titles-container a[data-video="${videoSrc}"]`);
     if (activeLink) {
         activeLink.classList.add('active');
     }
@@ -54,6 +53,7 @@ document.getElementById('randomButton').addEventListener('click', function() {
     // Charger la vidéo aléatoire
     loadVideo(randomVideo);
 });
+
 
 
 
