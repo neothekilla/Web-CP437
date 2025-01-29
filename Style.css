@@ -122,7 +122,6 @@ header {
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
     overflow: hidden; /* Cache tout débordement */
-    background-color: black; /* Ajoute un fond noir pour les bordures éventuelles */
 }
 
 
