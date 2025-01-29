@@ -1,0 +1,102 @@
+/* Style spécifique à la page infos.html */
+
+/* Corps de la page */
+body {
+    text-align: left; /* Texte ferré à gauche */
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: crosshair;
+    background: #7c7c7c;
+    color: rgb(0, 0, 0);
+}
+
+/* Header */
+header {
+    color: rgb(0, 0, 0);
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Couvre toute la largeur */
+    height: 50px; /* Hauteur fixe */
+    z-index: 10; /* Assure que le header est au-dessus des vidéos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Style pour le logo */
+.logo {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #ffea00; /* Couleur jaune au survol */
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 0px;
+    font-size: 11px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7c7c7c;
+}
+
+
+/* Contenu principal */
+main {
+    color: #7c7c7c;
+    margin-top: 20px; /* Compense la hauteur du header */
+    padding: 20px;
+    text-align: left; /* Texte dans le main ferré à gauche */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h2 {
+    color: #ffea00;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+
+main p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffff;
+}
+
+/* Image ferrée à droite */
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Aligne le texte en haut de l'image */
+    justify-content: flex-start;
+}
+
+.right-image {
+    margin-left: 20px; /* Ajoute un peu d'espace entre le texte et l'image */
+    height: auto;
+    max-width: 20%; /* Ajuste la taille de l'image si nécessaire */
+}
+
+

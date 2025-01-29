@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header avec onglets</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">CPbloom</h1>
+            <nav class="nav-links">
+                <a href="infos.html">[infos]</a>
+                <a href="scan.html">[scan]</a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <button id="randomButton">[random]</button>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="main-container">
+            <!-- Colonne de titres -->
+            <div class="titles-container">
+                <ul>
+                    <li><a href="#" data-video="assets/loop6.mp4">flower-bloomandloop.mp4</a></li>
+                    <li><a href="#" data-video="assets/loop2.mp4">flower-loop.mp4</a></li>
+                    <li><a href="#" data-video="assets/flower-3-loop.mp4">flower-zoom.mp4</a></li>
+                    <li><a href="#" data-video="assets/flower-4-loop.mp4">flower-bloom.mp4</a></li>
+                    <li><a href="#" data-video="assets/loop1.mp4">flower-bloom.mp4</a></li>
+                    <li><a href="#" data-video="assets/LOOP_7.mp4">flower-zoom-Morris.mp4</a></li> 
+                    <li><a href="#" data-video="assets/loop-test-mov.mp4">flower-test-loop.mp4</a></li>
+                    <li><a href="#" data-video="assets/loop-8.mp4">flower-blur-loop.mp4</a></li>
+                    <li><a href="#" data-video="assets/bloom-10.mp4">flower-mini-zoom.mp4</a></li>
+                    <li><a href="#" data-video="assets/bloom-11.mp4">one-flower-bloom.mp4</a></li>
+                    <li><a href="#" data-video="assets/ia-flower-loop.mp4">ia-flower-loop.mp4</a></li>
+                    <li><a href="#" data-video="assets/mini-loop2.mp4">flower-mini-zoom-2.mp4</a></li>
+                    <li><a href="#" data-video="assets/loop-12.mp4">flower-loop.mp4</a></li>
+                    <li><a href="#" data-video="assets/mini-zoom-3.mp4">flower-mini-zoom-3.mp4</a></li>
+                </ul>
+            </div>
+
+            <!-- Zone vidéo -->
+            <div class="video-container">
+                <video id="mainVideo" autoplay muted loop>
+                    <source src="assets/loop6.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
