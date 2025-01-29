@@ -117,7 +117,7 @@ header {
     left: 0;
     width: 100%; /* Couvre toute la largeur */
     height: 100%; /* Couvre toute la hauteur */
-    z-index: -1; /* Place la vidéo derrière le contenu */
+    z-index: 0; /* Place la vidéo derrière le contenu */
     display: flex; /* Utilisation de flexbox pour centrer la vidéo */
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
