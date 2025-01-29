@@ -122,9 +122,14 @@ header {
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
     overflow: hidden; /* Cache tout débordement */
+    background-color: black; /* Ajoute un fond noir pour les bordures éventuelles */
 }
 
-
+.video-container video {
+    width: auto; /* Laisse la largeur s’adapter */
+    height: 100%; /* La vidéo remplit la hauteur */
+    object-fit: contain; 
+}
 
 .video-container video {
     width: 100%; /* La vidéo occupe tout l'espace horizontal */
@@ -183,7 +188,6 @@ footer {
     max-width: 50%; 
 } 
  
-
 
 
 
