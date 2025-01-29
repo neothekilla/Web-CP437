@@ -122,7 +122,7 @@ header {
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
     overflow: hidden; /* Cache tout débordement */
-    background-color: black; /* Ajoute un fond noir pour les bordures éventuelles */
+    background-color: rgb(255, 255, 255); /* Ajoute un fond noir pour les bordures éventuelles */
 }
 
 .video-container video {
